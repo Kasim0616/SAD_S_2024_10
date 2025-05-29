@@ -2,7 +2,6 @@ package SOLID;
 
 public class DIP_01 {
 
-    // Step 1: Define an abstraction
     public interface SwitchableDevice {
 
         void turnOn();
@@ -10,7 +9,6 @@ public class DIP_01 {
         void turnOff();
     }
 
-    // Step 2: Implement the interface
     public static class LightBulb implements SwitchableDevice {
 
         public void turnOn() {
@@ -22,7 +20,6 @@ public class DIP_01 {
         }
     }
 
-    // Step 3: Switch depends on the abstraction
     public static class Switch {
 
         private SwitchableDevice device;
